@@ -1,0 +1,82 @@
+#containerId {
+    height: 100%;
+}
+
+#gridId {
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+
+#chartId {
+    float: right;
+    width: calc(70% - 2rem)!important;
+    height: 100% !important;
+    padding: 3rem;
+}
+
+.cryptoCurInput {
+    width: 50%;
+    padding: 0 1rem;
+}
+
+.errorContainer {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    color: #FF0000;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+#loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spin 0.5s linear infinite; /* Safari */
+    animation: spin 0.5s linear infinite;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    z-index: 1000;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.bodyOverlay {
+    background: content-box;
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+#inputContainerId {
+    margin: 1rem;
+    width: calc(100% - 2rem);
+    line-height: 3rem;
+}
+
+.predictData {
+    width: 20%;
+    margin-left: 1rem;
+}
+
+.tableHead {
+    font-weight: 700;
+}
+
+.grid {
+    height: calc(100% - 60px);
+    overflow: auto;
+    margin: 0 1rem;
+}
